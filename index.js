@@ -52,7 +52,7 @@ const start = () => {
   this.scene.add(this.light);
 
   this.light = new THREE.PointLight(0x0000ff);
-  this.light.position.z = 2;
+  this.light.position.z = 5;
   this.scene.add(this.light);
 
   this.camera = new THREE.PerspectiveCamera(75, canvas.width / canvas.height, 0.1, 1000);
@@ -86,7 +86,7 @@ const start = () => {
     //if(i==1) console.log(this.position.distanceTo(this.startPos));
   };
   let r;
-  for(var i = 0; i < 500; i++) {
+  for(var i = 0; i < 1500; i++) {
     c = new THREE.Mesh(bb, mat);
     c.position.set(
       Math.random() - .5,
