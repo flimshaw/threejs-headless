@@ -32,9 +32,6 @@ function initGL(canvas) {
   }
 }
 
-const vertSrc = fs.readFileSync(__dirname+ '/vert.glsl','utf8');
-const fragSrc = fs.readFileSync(__dirname+ '/frag.glsl','utf8');
-
 const start = () => {
 
   const canvas = document.createElement("canvas",800,600);

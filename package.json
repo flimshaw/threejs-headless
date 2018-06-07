@@ -1,16 +1,17 @@
 {
-  "name": "regl-headless",
+  "name": "threejs-headless",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Charlie Hoey <flimshaw>",
+  "license": "MIT",
   "dependencies": {
+    "node-webgl": "https://github.com/flimshaw/node-webgl.git#bugfix\/recent-osx-issues",
     "jsdom": "^11.11.0",
-    "node-webgl": "git+https://github.com/flimshaw/node-webgl.git#bugfix/recent-osx-issues",
-    "three": "git+https://github.com/flimshaw/three.js.git#bugfix/node-webgl-precision"
+    "three": "https://github.com/flimshaw/three.js.git#bugfix\/node-webgl-precision"
   }
 }
